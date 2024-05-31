@@ -50,8 +50,8 @@ transform = transforms.Compose([
     transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
 ])
 
-train_images, train_labels = load_data('./CUB_200_2011/CUB_200_2011/train.txt', './CUB_200_2011/CUB_200_2011/images')
-val_images, val_labels = load_data('./CUB_200_2011/CUB_200_2011/test.txt', './CUB_200_2011/CUB_200_2011/images')
+train_images, train_labels = load_data('./CUB_200_2011/train.txt', './CUB_200_2011/images')
+val_images, val_labels = load_data('./CUB_200_2011/test.txt', './CUB_200_2011/images')
 
 train_dataset = CUB200Dataset(train_images, train_labels, transform=transform)
 val_dataset = CUB200Dataset(val_images, val_labels, transform=transform)
