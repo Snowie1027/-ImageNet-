@@ -9,7 +9,9 @@ CUB-200-2011是一个包含200个鸟类物种的数据集,共包含11,788张图�
 本项目使用CUB-200-2011数据集,可以从以下地址下载:
 https://www.vision.caltech.edu/datasets/cub_200_2011/
 请将数据集解压到./CUB_200_2011目录下。
+
 环境要求
+
 	•	Python 3.7+
 	•	PyTorch 1.13.0+
 	•	torchvision
